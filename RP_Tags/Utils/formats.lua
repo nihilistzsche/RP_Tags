@@ -49,7 +49,7 @@ function(self, event, ...)
       [ "BUFF"]         = fmt(floc("SB_BUFF"),         buffName),
       [ "BUFF_BRC"]     = fmt(floc("SB_BUFF_BRC"),     buffName),
       [ "BUFF_PCT_BRC"] = fmt(floc("SB_BUFF_PCT_BRC"), buffName, sizeChange),
-      [ "ICON"]         = RPTAGS.CONST.ICONS.T_ .. GetSpellTexture(sizeBuff) .. RPTAGS.CONST.ICONS._t,
+      [ "ICON"]         = RPTAGS.CONST.ICONS.T_ .. C_Spell.GetSpellTexture(sizeBuff) .. RPTAGS.CONST.ICONS._t,
     };
   
     return sizeChange == 0 and "" or F[outFormat or Config.get("SIZEBUFF_FMT") or "PCT_BRC"];

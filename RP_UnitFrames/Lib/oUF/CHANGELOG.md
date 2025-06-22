@@ -1106,7 +1106,7 @@
     16. classicons: Throw cpoints back to its own element.
     17. classicons: Merges cpoints, harmonyorbs, holypower, shadoworbs and soulshards.
     18. core: Change PARTY_MEMBERS_CHANGED to GROUP_ROSTER_UPDATE.
-    19. Revert "core: Workaround GetAddOnMetadata not returning X-values in MoP."
+    19. Revert "core: Workaround C_AddOns.GetAddOnMetadata not returning X-values in MoP."
     20. raidrole: Remove WoW4 compatibility.
     21. masterlooter: Remove WoW4 compatibility.
     22. lfdrole: Remove WoW4 compatibility.
@@ -1131,7 +1131,7 @@
     41. assistant: Merge in MoP function changes.
     42. pvp: Don't set the PvP icon to Neutral on MoP.
     43. tags: Merge in MoP function changes.
-    44. core: Workaround GetAddOnMetadata not returning X-values in MoP.
+    44. core: Workaround C_AddOns.GetAddOnMetadata not returning X-values in MoP.
     45. assistant: Document :PostUpdate().
     46. docs: Correct the order we close code and pre tags.
     47. assistant: Document :PreUpdate().
