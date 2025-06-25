@@ -3,15 +3,8 @@
 -- ------------------------------------------------------------------------------
 -- This work is licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) license.
 
-local rpTagsVersion = "9.0.5"
-
 local RPTAGS = RPTAGS
 local addOnName, ns = ...
-
-if not C_AddOns.GetAddOnMetadata("RP_Tags", "Version"):match("^" .. rpTagsVersion) then
-	print(addOnName .. " requires at least version " .. rpTagsVersion .. " of rpTags.")
-	error()
-end
 
 RPTAGS.queue:NewModuleType("dataSource")
 local Module = RPTAGS.queue:NewModule(addOnName, "dataSource")
