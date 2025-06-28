@@ -50,7 +50,7 @@ Module:WaitUntil("ADDON_LOAD", function(self, event)
 	local getUnitID = TRP3_API.utils.str.getUnitID
 	local unitIDToInfo = TRP3_API.utils.str.unitIDToInfo
 
-	TRP3_API.RegisterCallback(TRP3_Addon, "REGISTER_DATA_UPDATED", function(unitID, profileID, dataType)
+	TRP3_API.RegisterCallback(TRP3_Addon, "REGISTER_DATA_UPDATED", function(_, unitID, profileID, dataType)
 		if not unitID then
 			return
 		end
@@ -77,11 +77,11 @@ Module:WaitUntil("ADDON_LOAD", function(self, event)
 		end -- if
 	end) -- end of our callback handler for new data
 
-	TRP3_API.RegisterCallback(TRP3_Addon, "REGISTER_PROFILES_LOADED", function(profileStructure)
+	TRP3_API.RegisterCallback(TRP3_Addon, "REGISTER_PROFILES_LOADED", function(_, profileStructure)
 		refreshFrame("player")
 	end)
 
-	TRP3_API.RegisterCallback(TRP3_Addon, "REGISTER_PROFILE_DELETED", function(profileStructure)
+	TRP3_API.RegisterCallback(TRP3_Addon, "REGISTER_PROFILE_DELETED", function(_, profileStructure)
 		refreshFrame("player")
 	end)
 end)
